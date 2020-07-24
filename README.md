@@ -6,9 +6,9 @@ Disponível em: https://www.youtube.com/watch?v=EaH1RivVGQc
 ---
 
 ## Tecnologias:
-    * HTML
-    * CSS
-    * JavaScript
+* HTML
+* CSS
+* JavaScript
 ---
 
 ## Próximos Desenvolvimentos
@@ -16,4 +16,4 @@ Disponível em: https://www.youtube.com/watch?v=EaH1RivVGQc
 * Paredes
 
 ## Desenvolvimentos Futuros
-    * Placar de Pontuações
+* Placar de Pontuações
