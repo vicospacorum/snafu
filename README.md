@@ -9,3 +9,11 @@ Disponível em: https://www.youtube.com/watch?v=EaH1RivVGQc
     * HTML
     * CSS
     * JavaScript
+---
+
+## Próximos Desenvolvimentos
+* Placar
+* Paredes
+
+## Desenvolvimentos Futuros
+    * Placar de Pontuações
