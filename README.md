@@ -12,8 +12,8 @@ Disponível em: https://www.youtube.com/watch?v=EaH1RivVGQc
 ---
 
 ## Próximos Desenvolvimentos
-* Placar
 * Paredes
 
 ## Desenvolvimentos Futuros
-* Placar de Pontuações
+* Melhorar a Apresentação
+* Lista de Maiores Pontuações
