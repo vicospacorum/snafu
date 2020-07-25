@@ -1,6 +1,8 @@
 let canvas = document.getElementById("snake");
 let context = canvas.getContext("2d");
-let box = 32;
+let box = 16;
+let arenaSide = 512;
+let arenaPixels = arenaSide / box;
 let snake = [];
 let score;
 
@@ -17,19 +19,19 @@ let food = {
 }
 
 function criarBG() {
-    context.fillStyle = "lightgreen";
-    context.fillRect(0, 0, 16 * box, 16 * box);
+    context.fillStyle = "#9db08c";
+    context.fillRect(0, 0, arenaPixels * box, arenaPixels * box);
 }
 
 function criarCobrinha() {
     for(i=0; i < snake.length; i++) {
-        context.fillStyle = "green";
+        context.fillStyle = "#233312";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood() {
-    context.fillStyle = "red";
+    context.fillStyle = "#607350";
     context.fillRect(food.x, food.y, box, box);
 }
 
@@ -45,10 +47,10 @@ function update(event) {
 score = 0;
 function iniciarJogo() {
     // Cria o efeito Pac-Man
-    if (snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
-    if (snake[0].x < 0 && direction == "left") snake[0].x = 16 * box;
-    if (snake[0].y > 15 * box && direction == "down") snake[0].y = 0;
-    if (snake[0].y < 0 && direction == "up") snake[0].y = 16 * box;
+    if (snake[0].x > (arenaPixels -1) * box && direction == "right") snake[0].x = 0;
+    if (snake[0].x < 0 && direction == "left") snake[0].x = arenaPixels * box;
+    if (snake[0].y > (arenaPixels - 1) * box && direction == "down") snake[0].y = 0;
+    if (snake[0].y < 0 && direction == "up") snake[0].y = arenaPixels * box;
 
     // Cria a condição de Fim de Jogo caso a Cobrinha choque-se contra si mesma
     for (i = 1; i < snake.length; i++) {
@@ -94,4 +96,4 @@ function iniciarJogo() {
     document.getElementById('score').innerHTML = "<h2>" + score + " Pontos</h2>";
 }
 
-let jogo = setInterval(iniciarJogo, 100);
+let jogo = setInterval(iniciarJogo, 80);

@@ -12,7 +12,7 @@ Desenvolvido a partir do "Desafio prático: Recriando o jogo da cobrinha com Jav
 
 ## Próximos Desenvolvimentos
 * Paredes
+* Velocidade e tamanho do jogo definidos pelo usuário
 
 ## Desenvolvimentos Futuros
-* Melhorar a Apresentação
 * Lista de Maiores Pontuações
